@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+}
+
+body {
+    background-image: url(./images/bg-header-mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 10em 0;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 2em;
+}
+
+.main__heading,
+.sub__heading,
+.super-sub__heading {
+    color: var(--Dark-Grayish-Blue);
+}
+
+.text {
+    color: var(--Grayish-Blue);
+}
+
+.btn__div {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5em;
+    margin-bottom: 5em;
+}
+
+.CTA__btn {
+    border: none;
+    outline: none;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 600;
+    border-radius: 100px;
+    width: 100%;
+    max-width: 250px;
+    padding: 1em 2em;
+    margin-bottom: 1.5em;
+    color: #fff;
+}
+
+.CTA__btn:hover {
+    cursor: pointer;
+}
+
+.btn_01 {
+    background: var(--Strong-Cyan);
+    box-shadow: 0px 3px 1px hsl(171, 65%, 34%);
+    transition: 300ms;
+}
+
+.btn_01:hover {
+    background: hsl(171, 70%, 52%);
+    box-shadow: 0px 3px 5px hsl(171, 65%, 41%);
+}
+
+.btn_02 {
+    background: var(--Light-Blue);
+    box-shadow: 0px 3px 1px hsl(233, 45%, 44%);
+    transition: 300ms;
+}
+
+.btn_02:hover {
+    background: hsl(233, 100%, 62%);
+    box-shadow: 0px 3px 5px hsl(233, 59%, 44%);
+}
+
+main {
+    text-align: center;
+}
+
+.ctn__01,
+.ctn__01_01 {
+    margin: 5em auto;
+}
+
+.ctn__01_01 div {
+    margin-bottom: 3em;
+}
+
+.sub__heading_02 {
+    margin-top: 5em;
+}
+
+.img__ctn {
+    margin: 4em 0 8em;
+}
+
+.ctn_02 {
+    margin: 5rem auto;
+}
+
+.ctn_02 div {
+    margin-bottom: 3em;
+}
+
+.company__icons {
+    margin: 7em auto;
+}
+
+.company__icon {
+    margin-bottom: 4em;
+}
+
+footer {
+    text-align: center;
+    background: hsl(202, 100%, 95%);
+    padding: 2em 0;
+}
+
+.footer__logo {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.footer__links {
+    margin: 3em 0;
+    padding: 0;
+}
+
+.link {
+    text-align: center;
+    margin-bottom: 1.8em;
+    transition: 300ms;
+}
+
+.link a:hover {
+    color: var(--Strong-Cyan);
+}
+
+.social__links {
+    margin: 2rem auto;
+}
+
+.social__link {
+    margin: 2em 1em;
+    transition: 300ms;
+}
+
+.social__link:hover {
+    color: var(--Strong-Cyan);
+}
+
+@media screen and (min-width: 720px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .container {
+        width: 80%;
+    }
+    .btn__div {
+        flex-direction: row;
+    }
+    .CTA__btn {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    .ctn__01 {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .contain {
+        width: 60%;
+        margin: 1rem auto;
+    }
+    .ctn__01__img-ctn {
+        position: relative;
+        left: -100px;
+    }
+    .ctn__01_01 {
+        margin: 0;
+        font-size: 0.95rem;
+        text-align: start;
+    }
+    .ctn_02,
+    .company__icons,
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .ctn_02 div {
+        margin: 0;
+        width: 31%;
+    }
+    .ctn_02_02 img,
+    .ctn_02_03 img {
+        margin-bottom: 8px;
+    }
+    .company__icons {
+        align-items: center;
+    }
+    .company__icon {
+        margin: 0;
+        width: 13%;
+    }
+    footer {
+        align-items: center;
+    }
+    .footer__logo {
+        width: 50px;
+        flex: 1;
+    }
+    .footer__links {
+        width: 60%;
+        display: flex;
+        flex: 2;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .link {
+        width: 150px;
+        margin: 0.5rem 0;
+        text-align: start;
+    }
+    .social__links {
+        width: 30%;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .social__link {
+        margin: 0 1rem;
+    }
+}
